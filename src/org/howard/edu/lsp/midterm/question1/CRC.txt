@@ -1,53 +1,53 @@
-# Library System CRC Analysis
+Library System CRC Analysis
 
-## Part 1: Identify Classes
+Part 1: Identify Classes
 
-### 1. Book
-The Book class is needed because it represents the most important entity in the library system. Each book has many attributes that need to be managed.
+    1. Book
+    The Book class is needed because it represents the most important entity in the library system. Each book has many attributes that need to be managed.
 
-### 2. Member
-This class is necessary because it tracks who has borrowed books, and enforces rules that the users have.
+    2. Member
+    This class is necessary because it tracks who has borrowed books, and enforces rules that the users have.
 
-### 3. Librarian
-The Librarian class is necessary because it represents the staff who manage the collection in the library.
+    3. Librarian
+    The Librarian class is necessary because it represents the staff who manage the collection in the library.
 
-### 4. Library
-The Library class is necessary because it acts like the management system that tracks and manages all interactions between books, members, and librarians.
+    4. Library
+    The Library class is necessary because it acts like the management system that tracks and manages all interactions between books, members, and librarians.
 
-## Part 2: Define Responsibilities
+Part 2: Define Responsibilities
 
-### 1. Book
-- Store and provide access to book information
-- Track and update availability status
+    1. Book
+    - Store and provide access to book information
+    - Track and update availability status
 
-### 2. Member
-- Maintain a list of borrowed books
-- Borrow and return books
+    2. Member
+    - Maintain a list of borrowed books
+    - Borrow and return books
 
-### 3. Librarian
-- Manage book collection
-- Generate reports and views
+    3. Librarian
+    - Manage book collection
+    - Generate reports and views
 
-### 4. Library
-- Maintain the complete book collection
-- Facilitate book borrowing and returning processes
+    4. Library
+    - Maintain the complete book collection
+    - Facilitate book borrowing and returning processes
 
-## Part 3: Identify Collaborators
+Part 3: Identify Collaborators
 
-### 1. Book
-- Collaborates with Member: Collaboration is needed because they need to interact with each other to update things like the availability of a book and the amount of borrowed books a member has
-- Collaborates with Library: Needs collaboration to make sure a book is properly registered in a collection.
+    1. Book
+    - Collaborates with Member: Collaboration is needed because they need to interact with each other to update things like the availability of a book and the amount of borrowed books a member has.
+    - Collaborates with Library: Needs collaboration to make sure a book is properly registered in a collection.
 
-### 2. Member
-- Collaborates with Book: When borrowing or returning books, the Member class needs to interact with the Book class to check and update the book's availability status.
-- Collaborates with Library: The Member class interacts with the Library class to access the collection of available books and to register borrowing and returning books.
+    2. Member
+    - Collaborates with Book: When borrowing or returning books, the Member class needs to interact with the Book class to check and update the book's availability status.
+    - Collaborates with Library: The Member class interacts with the Library class to access the collection of available books and to register borrowing and returning books.
 
-### 3. Librarian
-- Collaborates with Book: When adding or removing books, the Librarian class interacts with the Book class to create new book instances or delete existing ones.
-- Collaborates with Library: The Librarian class interacts with the Library class to access the full collection, get information about book availability, and check borrowing records.
-- Collaborates with Member: The Librarian class may interact with the Member class to view which members have checked out specific books.
+    3. Librarian
+    - Collaborates with Book: When adding or removing books, the Librarian class interacts with the Book class to create new book instances or delete existing ones.
+    - Collaborates with Library: The Librarian class interacts with the Library class to access the full collection, get information about book availability, and check borrowing records.
+    - Collaborates with Member: The Librarian class may interact with the Member class to view which members have checked out specific books.
 
-### 4. Library
-- Collaborates with Book: The Library class interacts with the Book class to maintain the collection and update book statuses during borrowing and returning operations.
-- Collaborates with Member: The Library class collaborates with the Member class to enforce borrowing limits and track which members have which books.
-- Collaborates with Librarian: The Library class works with the Librarian class to provide information for reports and to implement collection management operations.
+    4. Library
+    - Collaborates with Book: The Library class interacts with the Book class to maintain the collection and update book statuses during borrowing and returning operations.
+    - Collaborates with Member: The Library class collaborates with the Member class to enforce borrowing limits and track which members have which books.
+    - Collaborates with Librarian: The Library class works with the Librarian class to provide information for reports and to implement collection management operations.
