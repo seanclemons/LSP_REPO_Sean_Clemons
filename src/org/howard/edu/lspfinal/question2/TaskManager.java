@@ -72,3 +72,9 @@ public class TaskManager {
         }
     }
 }
+
+/**
+ * Sources:
+ * https://docs.oracle.com/javase/tutorial/essential/exceptions/
+ * https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html
+ */

@@ -18,3 +18,8 @@ public abstract class Report {
 
     protected abstract void printReport();
 }
+
+/**
+ * Source:
+ * https://refactoring.guru/design-patterns/template-method
+ */
